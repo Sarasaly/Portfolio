@@ -1,0 +1,85 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+    height: auto;
+    width: 100vw;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+#AboutMe, #CoDelam {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#AboutMe > span, #CoDelam > span {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+#AboutMe > span::after, #CoDelam > span::after {
+    content: " ";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #71b3ec, #d353f7 );
+
+} 
+
+#AboutMeText {
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    margin: 0 auto;
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#AboutMeText li {
+    display: flex;
+    align-items: center;
+}
+#AboutMeText li i {
+    margin-right: 15px;
+}
+
+#CoDelamText p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50%;
+
+}
